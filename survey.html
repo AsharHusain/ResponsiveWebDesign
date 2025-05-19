@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+
+  <h1 id="title">Student Experience Survey</h1>
+
+  <p id="description">We'd love to hear your thoughts about your learning journey!</p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label id="number-label" for="number">Age</label>
+    <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age">
+
+    <label for="dropdown">Which course are you enrolled in?</label>
+    <select id="dropdown" name="course">
+      <option value="">--Select one--</option>
+      <option value="web">Web Development</option>
+      <option value="ai">AI & Machine Learning</option>
+    </select>
+
+    <p>Would you recommend this course?</p>
+    <label><input type="radio" name="recommend" value="yes"> Yes</label>
+    <label><input type="radio" name="recommend" value="no"> No</label>
+
+    <p>What did you enjoy the most?</p>
+    <label><input type="checkbox" value="projects"> Projects</label>
+    <label><input type="checkbox" value="mentors"> Mentorship</label>
+    <label><input type="checkbox" value="community"> Community</label>
+
+    <p>Additional comments:</p>
+    <textarea placeholder="Write your suggestions here..."></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+</body>
+</html>
