@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Technical Documentation</title>
+  <link rel="stylesheet" href="technical.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+    <a class="nav-link" href="#Functions_and_Scope">Functions and Scope</a>
+    <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+    <a class="nav-link" href="#ES6_Features">ES6 Features</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a lightweight, interpreted programming language.</p>
+      <p>It is used to make web pages interactive and dynamic.</p>
+      <p>It can update and change both HTML and CSS.</p>
+      <p>It can be run on the client-side as well as server-side.</p>
+      <p>JavaScript is one of the core technologies of the web, alongside HTML and CSS.</p>
+      <code>console.log("Hello, World!");</code>
+      <code>alert("This is JavaScript!");</code>
+      <ul>
+        <li>Client-side language</li>
+        <li>Event-driven</li>
+        <li>Prototype-based</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header>Variables and Data Types</header>
+      <p>Variables are containers for storing data values.</p>
+      <p>You can declare variables using var, let, or const.</p>
+      <p>Data types include String, Number, Boolean, Object, and more.</p>
+      <p>JavaScript is dynamically typed.</p>
+      <p>Variables can be reassigned unless declared with const.</p>
+      <code>let name = "Alice";</code>
+      <code>const pi = 3.1415;</code>
+      <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Null</li>
+        <li>Undefined</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions_and_Scope">
+      <header>Functions and Scope</header>
+      <p>Functions are blocks of code designed to perform a task.</p>
+      <p>You can define functions using function declarations or expressions.</p>
+      <p>Arrow functions offer a shorter syntax.</p>
+      <p>Scope determines the accessibility of variables.</p>
+      <p>JavaScript has function and block scopes.</p>
+      <code>function greet(name) { return "Hello " + name; }</code>
+      <code>const add = (a, b) => a + b;</code>
+      <ul>
+        <li>Function declaration</li>
+        <li>Function expression</li>
+        <li>Arrow function</li>
+        <li>Global scope</li>
+        <li>Block scope</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="DOM_Manipulation">
+      <header>DOM Manipulation</header>
+      <p>The DOM represents the document structure.</p>
+      <p>You can access elements using methods like getElementById or querySelector.</p>
+      <p>JavaScript allows dynamic changes to HTML and CSS.</p>
+      <p>You can create, remove, or edit DOM nodes.</p>
+      <p>Events are used to interact with user actions.</p>
+      <code>document.getElementById("title").textContent = "Changed";</code>
+      <code>element.addEventListener("click", () => alert("Clicked!"));</code>
+      <ul>
+        <li>getElementById</li>
+        <li>querySelector</li>
+        <li>createElement</li>
+        <li>appendChild</li>
+        <li>addEventListener</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="ES6_Features">
+      <header>ES6 Features</header>
+      <p>ES6 introduced many useful features.</p>
+      <p>Let and Const are preferred for variable declaration.</p>
+      <p>Arrow functions simplify function syntax.</p>
+      <p>Template literals allow embedded expressions.</p>
+      <p>Destructuring simplifies object and array unpacking.</p>
+      <code>let [a, b] = [1, 2];</code>
+      <code>const greet = (name) => `Hello, ${name}`;</code>
+      <ul>
+        <li>let & const</li>
+        <li>Arrow functions</li>
+        <li>Template literals</li>
+        <li>Destructuring</li>
+        <li>Modules</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
