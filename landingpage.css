@@ -1,0 +1,158 @@
+/* Reset and base font */
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background: #fefae0;
+  color: #1d3557;
+  line-height: 1.6;
+}
+
+/* Fixed header with flex */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #e63946; /* pirate-red */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+/* Logo styling */
+#header-img {
+  height: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Navigation bar */
+#nav-bar {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffd60a; /* treasure gold */
+  outline: none;
+}
+
+/* Main content padding to avoid hidden under fixed header */
+main {
+  padding-top: 90px;
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Sections styling */
+section {
+  margin-bottom: 60px;
+  background: #fff8e1;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(230, 57, 70, 0.15);
+}
+
+h2 {
+  color: #e63946;
+  margin-bottom: 15px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+/* Crew list */
+#crew ul {
+  list-style-type: square;
+  padding-left: 25px;
+  font-size: 1.1rem;
+}
+
+#crew li {
+  margin: 10px 0;
+}
+
+/* Video container */
+#video-section {
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Form styling */
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#email {
+  padding: 12px 15px;
+  width: 320px;
+  font-size: 1rem;
+  border: 2px solid #1d3557;
+  border-radius: 6px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+#email:focus {
+  border-color: #e63946;
+}
+
+#submit {
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover,
+#submit:focus {
+  background-color: #1d3557;
+  outline: none;
+}
+
+/* Responsive: Nav stacking on small screens */
+@media (max-width: 600px) {
+  #nav-bar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #email {
+    width: 90%;
+  }
+
+  main {
+    margin: 20px 10px 40px 10px;
+  }
+
+  section {
+    padding: 15px 20px;
+  }
+}
